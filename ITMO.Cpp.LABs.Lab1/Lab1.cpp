@@ -3,7 +3,6 @@
 #include <string>
 #include <cmath>
 #include <iomanip>
-using namespace std;
 
 namespace Lab1 
 {
@@ -12,10 +11,10 @@ namespace Lab1
 	//
 	void ex1()
 	{
-		string name;
-		cout << "What is your name? ";
-		getline(cin, name);
-		cout << "Hello, " << name << "!\n";
+		std::string name;
+		std::cout << "What is your name? ";
+		std::getline(std::cin, name);
+		std::cout << "Hello, " << name << "!\n";
 	}
 
 	//
@@ -23,18 +22,18 @@ namespace Lab1
 	//
 	void ex2()
 	{
-		string name;
+		std::string name;
 		double x;
 		double a, b;
-		cout << "Введите свое имя ";
-		cout << "\nВведите a и b: \n";
-		cin >> a;
-		cin >> name;
-		cin >> b;
+		std::cout << "Введите свое имя ";
+		std::cout << "\nВведите a и b: \n";
+		std::cin >> a;
+		std::cin >> name;
+		std::cin >> b;
 		x = a / b;
 		//cout.precision(3);
-		cout << "\nx = " << x << endl;
-		cout << "Привет, " << name << "!\n";
+		std::cout << "\nx = " << x << std::endl;
+		std::cout << "Привет, " << name << "!\n";
 		//cout << sizeof(a / b) << ends << " " << sizeof(x) << endl;
 	}
 
@@ -44,21 +43,21 @@ namespace Lab1
 	void ex3()
 	{
 		double a, p, P;
-		cout << "Введите периметр:\n";
-		cin >> P;
+		std::cout << "Введите периметр:\n";
+		std::cin >> P;
 		a = P / 3; // Длинна сторон
 		p = P / 2; // Полупериметр
 		double S = sqrt(p * pow((p - a), 3)); // Площадь	
-		cout.precision(2);
-		cout << left
-			<< setw(20)
-			<< "Сторона "
-			<< "Площадь\n";
-		cout << left
-			<< setw(20)
-			<< a
-			<< " "
-			<< S;
+		std::cout.precision(2);
+		std::cout << std::left
+				<< std::setw(20)
+				<< "Сторона "
+				<< "Площадь\n";
+		std::cout << std::left
+				<< std::setw(20)
+				<< a
+				<< " "
+				<< S;
 	}
 
 	//
@@ -67,18 +66,18 @@ namespace Lab1
 	void controlEx()
 	{
 		int n;
-		cout << "Введите количество вершин:\n";
-		cin >> n;
+		std::cout << "Введите количество вершин:\n";
+		std::cin >> n;
 		int* arrayX = new int[n]; // Массив Х в куче
 		int* arrayY = new int[n]; // Массив Y в куче
 
 		for (size_t i = 0; i < n; i++) // Запрос и добавление координат в массивы
 		{
 			int x, y;
-			cout << "Введите координаты вершины " << i + 1 << "\n" << "x = ";
-			cin >> arrayX[i];
-			cout << "y = ";
-			cin >> arrayY[i];
+			std::cout << "Введите координаты вершины " << i + 1 << "\n" << "x = ";
+			std::cin >> arrayX[i];
+			std::cout << "y = ";
+			std::cin >> arrayY[i];
 		}
 
 		int sum1 = 0, sum2 = 0;
@@ -98,6 +97,6 @@ namespace Lab1
 		}
 		double S = abs((double)(sum1 - sum2) / 2); // Вычисление площади
 
-		cout << "Площадь " << n << "-угольника равна " << S << "\n"; // Вывод результата
+		std::cout << "Площадь " << n << "-угольника равна " << S << "\n"; // Вывод результата
 	}
 }
