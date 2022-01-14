@@ -4,7 +4,10 @@
 
 namespace Lab2
 {
-	void ex1()
+	//
+	// Упражнение 1
+	//
+	int ex1()
 	{
 		int x, y;
 		std::cout << "Введите координаты точки\n" << "x = ";
@@ -17,8 +20,13 @@ namespace Lab2
 			std::cout << "снаружи";
 		else
 			std::cout << "на границе";
+		return 0;
 	}
-	void ex2()
+
+	//
+	// Упражнение 2
+	//
+	int ex2()
 	{
 		double x, x1, x2, y;
 		std::cout << "x1 = ";
@@ -34,8 +42,13 @@ namespace Lab2
 			x = x + 0.01;
 		} 
 		while (x <= x2);
+		return 0;
 	}
-	void controlEx1()
+
+	//
+	// Контрольное задание 1
+	//
+	int controlEx1()
 	{
 		int year;
 		std::cout << "Введите год: ";
@@ -46,8 +59,13 @@ namespace Lab2
 			std::cout << "Год високосный!";
 		else
 			std::cout << "Год НЕвисокосный!";
+		return 0;
 	}
-	void controlEx2()
+
+	//
+	// Контрольное задание 2
+	//
+	int controlEx2()
 	{
 		int x1, x2, x3;
 		std::cout << "Введите 3 числа: ";
@@ -60,8 +78,13 @@ namespace Lab2
 			std::cout << x2;
 		else
 			std::cout << x3;
+		return 0;
 	}
-	void controlEx3()
+	
+	//
+	// Контрольное задание 3
+	//
+	int controlEx3()
 	{
 		char flag = 'Y';
 		while (flag == 'Y' || flag == 'y')
@@ -87,8 +110,13 @@ namespace Lab2
 			std::cout << "Введите 'Y', чтоб повторить: \n";
 			std::cin >> flag;
 		}		
+		return 0;
 	}
-	void controlEx4()
+
+	//
+	// Контрольное задание 4
+	//
+	int controlEx4()
 	{
 		srand(time(0));
 		int a = rand() % 10 - 5, 
@@ -129,10 +157,10 @@ namespace Lab2
 			std::cout << "Стрелок!";
 		else
 			std::cout << "Новичок!";
+		return 0;
 	}
 
-
-	bool checkInRound(int a, int b, int x, int y, int R)
+	bool checkInRound(int a, int b, int x, int y, int R) // Проверка на нахожение точки внутри окружности
 	{
 		if (pow((x - a), 2) + pow((y - b), 2) < pow(R, 2))
 			return true;

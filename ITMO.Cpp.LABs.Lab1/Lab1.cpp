@@ -9,18 +9,19 @@ namespace Lab1
 	//
 	// Упражнение 1
 	//
-	void ex1()
+	int ex1()
 	{
 		std::string name;
 		std::cout << "What is your name? ";
 		std::getline(std::cin, name);
 		std::cout << "Hello, " << name << "!\n";
+		return 0;
 	}
 
 	//
 	// Упражнение 2
 	//
-	void ex2()
+	int ex2()
 	{
 		std::string name;
 		double x;
@@ -35,12 +36,13 @@ namespace Lab1
 		std::cout << "\nx = " << x << std::endl;
 		std::cout << "Привет, " << name << "!\n";
 		//cout << sizeof(a / b) << ends << " " << sizeof(x) << endl;
+		return 0;
 	}
 
 	//
 	// Упражнение 3
 	//
-	void ex3()
+	int ex3()
 	{
 		double a, p, P;
 		std::cout << "Введите периметр:\n";
@@ -58,12 +60,13 @@ namespace Lab1
 				<< a
 				<< " "
 				<< S;
+		return 0;
 	}
 
 	//
 	// Контрольное задание
 	//
-	void controlEx()
+	int controlEx()
 	{
 		int n;
 		std::cout << "Введите количество вершин:\n";
@@ -98,5 +101,6 @@ namespace Lab1
 		double S = abs((double)(sum1 - sum2) / 2); // Вычисление площади
 
 		std::cout << "Площадь " << n << "-угольника равна " << S << "\n"; // Вывод результата
+		return 0;
 	}
 }
