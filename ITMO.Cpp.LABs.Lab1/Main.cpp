@@ -17,6 +17,11 @@ int main()
 	//Lab3::ex1();
 	//Lab3::ex2();
 	//Lab3::ex3();
-	Lab3::ex4();
+	//Lab3::ex4();
+	//Lab3::controlEx1();
+	//Lab3::controlEx2();
+	//Lab3::controlEx3();
+	//Lab3::controlEx4();
+	Lab3::controlEx5();
 	return 0;
 }
