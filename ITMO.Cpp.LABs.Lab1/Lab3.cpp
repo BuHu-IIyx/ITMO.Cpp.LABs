@@ -104,7 +104,10 @@ namespace Lab3
 	//
 	int ex4()
 	{
-
+		int myArray[]{ 1, 2, 3, 4, 5 };
+		int aaa = 6;
+		std::cout << myArray[5];
+		return 0;
 	}
 
 	//
