@@ -195,7 +195,7 @@ namespace Lab3
 		POINT pointD = { 11, 3 };
 		POINT pointE = { 5, 3 };
 		FIVEANGLE fiveAngle = { pointA, pointB, pointC, pointD, pointE };
-		std::cout << "Площадь равна: " << areaFiveAngle(fiveAngle);
+		std::cout << "Площадь равна: " << areaFiveAngle(fiveAngle) << std::endl;
 		return 0;
 	};
 
@@ -283,7 +283,7 @@ namespace Lab3
 		int n;
 		std::cout << "Введите число: ";
 		std::cin >> n;
-		std::cout << "Сумма равна: " << rowSum(n);
+		std::cout << "Сумма равна: " << rowSum(n) << std::endl;
 		return 0;
 	}
 
@@ -303,7 +303,7 @@ namespace Lab3
 		int num;
 		std::cout << "Введите число: ";
 		std::cin >> num;
-		std::cout << "В двоичном коде: " << encod2(num);
+		std::cout << "В двоичном коде: " << encod2(num) << std::endl;
 		return 0;
 	}	
 }
