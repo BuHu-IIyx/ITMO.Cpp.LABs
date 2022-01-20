@@ -148,14 +148,15 @@ namespace Lab4
 			return 1;
 		}
 		int s = a + b;
-		return 0;
+		return 0;
+
 	}
 	bool Input(int& a, int& b)
 	{
 		double tA, tB;
 		std::cout << "¬ведите два числа: " << std::endl;
 		std::cin >> tA >> tB;
-		if (tA - (int)tA != 0 || tA - (int)tA != 0)
+		if (tA - (int)tA != 0 || tA - (int)tB != 0)
 			return false;
 		else if (tA < 0 || tB < 0)
 			return false;

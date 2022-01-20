@@ -21,26 +21,26 @@ int main()
 	//Lab3::ex2();
 	//Lab3::ex3();
 	//Lab3::ex4();
-	printName(3, 1);
-	Lab3::controlEx1();
-	printName(3, 2);
-	Lab3::controlEx2();
-	printName(3, 3);
-	Lab3::controlEx3();
-	printName(3, 4);
-	Lab3::controlEx4();
-	printName(3, 5);
-	Lab3::controlEx5();
+	//Lab3::controlEx1();
+	//Lab3::controlEx2();
+	//Lab3::controlEx3();
+	//Lab3::controlEx4();
+	//Lab3::controlEx5();
 	//Lab4::ex1();
 	//Lab4::ex2();
-	printName(4, 1);
-	Lab4::controlEx1();
-	printName(4, 2);
-	Lab4::controlEx2();
+	//Lab4::controlEx1();
+	//Lab4::controlEx2();
+	//Lab5::ex1();
+	//Lab5::ex2();
+	//Lab5::ex3();
+	//Lab5::ex4();
+	//Lab5::ex5();
+	Lab5::controlEx1();
+	Lab5::controlEx2();
 	return 0;
 }
 
-void printName(int lab, int ex, std::string name)
+void printName(int lab, int ex)
 {
 	std::cout << "\n--------------------"
 		<< "\nПрактическое занятие " << lab

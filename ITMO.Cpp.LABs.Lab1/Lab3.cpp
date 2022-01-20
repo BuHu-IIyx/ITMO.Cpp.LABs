@@ -154,20 +154,20 @@ namespace Lab3
 		POINT e;
 	};
 
-	double lengthSide(POINT a, POINT b)
+	double lengthSide(POINT& a, POINT& b)
 	{
 		double L = sqrt(pow((a.x - b.x), 2) + pow((a.y - b.y), 2));
 		return L;
 	};
 
-	double halfPerimeter(TRIANGLE triangle)
+	double halfPerimeter(TRIANGLE& triangle)
 	{
 		double P = lengthSide(triangle.a, triangle.b) +
 			lengthSide(triangle.b, triangle.c) + lengthSide(triangle.c, triangle.a);
 		return P/2;
 	};
 
-	double areaTriangle(TRIANGLE triangle)
+	double areaTriangle(TRIANGLE& triangle)
 	{
 		double hPerimeter = halfPerimeter(triangle);
 		double sideA = lengthSide(triangle.a, triangle.b);
@@ -178,7 +178,7 @@ namespace Lab3
 		return area;
 	};
 
-	double areaFiveAngle(FIVEANGLE fiveAngle)
+	double areaFiveAngle(FIVEANGLE& fiveAngle)
 	{
 		TRIANGLE triangle1 = { fiveAngle.a, fiveAngle.b, fiveAngle.c };
 		TRIANGLE triangle2 = { fiveAngle.c, fiveAngle.d, fiveAngle.e };
