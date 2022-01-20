@@ -188,9 +188,9 @@ namespace Lab5
 		int flag = 0;
 		while (true)
 		{
-			std::cout << "Исходные данные:\n";
+			std::cout << "Исходные данные: ";
 			std::cout << sArr << std::endl;
-			std::cout << "1. Расчет суммы элементов\n"
+			std::cout << "\n1. Расчет суммы элементов\n"
 				<< "2. Расчет суммы отрицательных элементов\n"
 				<< "3. Расчет суммы положительных элементов\n"
 				<< "4. Расчет суммы элементов с нечетными индексами\n"
@@ -203,8 +203,12 @@ namespace Lab5
 			std::cin >> flag;
 			if (flag == 9)
 				break;
+			else if (flag < 1 || flag >8)
+			{
+				std::cout << "Некорректное значение, повторите ввод.";
+			}
 			else
-				std::cout << methodsArray[flag-1](myArray, n) << std::endl;
+				std::cout << "Ответ: " << methodsArray[flag - 1](myArray, n) << std::endl;
 		}
 		
 		delete[] myArray;

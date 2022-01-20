@@ -46,3 +46,9 @@ namespace Lab5
 	int controlEx1();
 	int controlEx2();
 }
+namespace Lab6
+{
+	int ex1();
+	int controlEx1();
+	int controlEx2();
+}

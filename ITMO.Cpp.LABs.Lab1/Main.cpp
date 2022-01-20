@@ -35,8 +35,13 @@ int main()
 	//Lab5::ex3();
 	//Lab5::ex4();
 	//Lab5::ex5();
+	/*printName(6, 1);
 	Lab5::controlEx1();
-	Lab5::controlEx2();
+	printName(6, 2);
+	Lab5::controlEx2();*/
+	//Lab6::ex1();
+	//Lab6::controlEx1();
+	Lab6::controlEx2();
 	return 0;
 }
 
