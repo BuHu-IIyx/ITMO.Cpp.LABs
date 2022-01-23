@@ -7,6 +7,9 @@ using std::cin;
 
 namespace Lab6
 {
+	//
+	// Упражнение 1
+	//
 	int ex1()
 	{
 		double sum = 0;
@@ -41,6 +44,9 @@ namespace Lab6
 		in.close();
 		return 0;
 	}
+	//
+	// Контрольное задание 1
+	//
 	int controlEx1()
 	{
 		
@@ -67,6 +73,9 @@ namespace Lab6
 		fout.close();
 		return 0;
 	}
+	//
+	// Контрольное задание 2
+	//
 	int controlEx2()
 	{
 		std::ofstream out("Lab5Ex2", std::ios::out | std::ios::binary);
