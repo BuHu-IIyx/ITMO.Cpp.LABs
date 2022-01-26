@@ -48,8 +48,8 @@ int main()
 	//Lab7::controlEx1();
 	/*Lab7::controlEx2();
 	Lab7::controlEx3();*/
-	Lab8::ex1();
-
+	//Lab8::ex1();
+	Lab8::controlEx1();
 	return 0;
 }
 

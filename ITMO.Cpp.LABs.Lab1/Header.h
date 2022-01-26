@@ -64,5 +64,5 @@ namespace Lab7
 namespace Lab8
 {
 	int ex1();
-
+	int controlEx1();
 }

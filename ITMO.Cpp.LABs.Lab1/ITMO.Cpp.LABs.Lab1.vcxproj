@@ -149,10 +149,12 @@
     <ClCompile Include="Lab8.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Student.cpp" />
+    <ClCompile Include="Time.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h" />
     <ClInclude Include="Student.h" />
+    <ClInclude Include="Time.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Lab5Ex1.txt" />

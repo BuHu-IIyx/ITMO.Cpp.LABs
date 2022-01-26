@@ -119,7 +119,7 @@ namespace Lab7
 	//
 	// Контрольное задание 1
 	//
-	struct Time
+	struct OldTime
 	{
 		int hours;
 		int minutes;
@@ -129,9 +129,9 @@ namespace Lab7
 			return std::to_string(this->hours) + "ч. " + std::to_string(this->minutes)
 				+ "мин. " + std::to_string(this->seconds) + "сек.";
 		}
-		Time& addTime(Time& time)
+		OldTime& addTime(OldTime& time)
 		{
-			Time resTime
+			OldTime resTime
 			{
 				this->hours + time.hours,
 				this->minutes + time.minutes,
@@ -149,9 +149,9 @@ namespace Lab7
 			}
 			return resTime;
 		}
-		Time& subTime(Time& time)
+		OldTime& subTime(OldTime& time)
 		{
-			Time resTime
+			OldTime resTime
 			{
 				this->hours - time.hours,
 				this->minutes - time.minutes,
@@ -173,10 +173,10 @@ namespace Lab7
 
 	int controlEx1()
 	{
-		Time time1{ 4, 20, 55 };
-		Time time2{ 2, 55, 32 };
-		Time aTime = time1.addTime(time2);
-		Time sTime = time1.subTime(time2);
+		OldTime time1{ 4, 20, 55 };
+		OldTime time2{ 2, 55, 32 };
+		OldTime aTime = time1.addTime(time2);
+		OldTime sTime = time1.subTime(time2);
 		cout << aTime.getTime();
 		cout << sTime.getTime();
 		return 0;

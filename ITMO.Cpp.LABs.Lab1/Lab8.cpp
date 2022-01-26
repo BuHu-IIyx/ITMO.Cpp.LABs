@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include "student.h"
+#include "Time.h"
 using std::endl;
 using std::cout;
 using std::cin;
@@ -48,5 +49,15 @@ namespace Lab8
 		delete student02;
 		return 0;
 	}
-
+	//
+	// Контрольное задание 1
+	//
+	int controlEx1()
+	{
+		Time time1{ 4, 20, 55 };
+		Time time2{ 2, 55, 32 };
+		Time aTime = aTime.addTime(time1, time2);
+		cout << aTime.getTime();
+		return 0;
+	}
 }
