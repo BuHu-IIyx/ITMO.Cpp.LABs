@@ -24,6 +24,13 @@ public:
 	void save();
 	// Деструктор класса Student
 	~Student();
+	class ExScore
+	{
+	public:
+		string origin; //для имени функции
+		int iValue; //для хранения ошибочного значения
+		ExScore(string, int);
+	};
 private:
 	// Промежуточные оценки
 	int scores[5];

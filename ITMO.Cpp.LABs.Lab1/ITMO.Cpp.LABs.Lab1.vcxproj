@@ -147,14 +147,17 @@
     <ClCompile Include="Lab6.cpp" />
     <ClCompile Include="Lab7.cpp" />
     <ClCompile Include="Lab8.cpp" />
+    <ClCompile Include="Lab9.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Student.cpp" />
     <ClCompile Include="Time.cpp" />
+    <ClCompile Include="Triangle.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h" />
     <ClInclude Include="Student.h" />
     <ClInclude Include="Time.h" />
+    <ClInclude Include="Triangle.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Lab5Ex1.txt" />

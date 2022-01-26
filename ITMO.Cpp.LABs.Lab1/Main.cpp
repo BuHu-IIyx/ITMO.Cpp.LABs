@@ -35,21 +35,26 @@ int main()
 	//Lab5::ex3();
 	//Lab5::ex4();
 	//Lab5::ex5();
-	/*printName(6, 1);
-	Lab5::controlEx1();
-	printName(6, 2);
-	Lab5::controlEx2();*/
+	//printName(6, 1);
+	//Lab5::controlEx1();
+	//printName(6, 2);
+	//Lab5::controlEx2();
 	//Lab6::ex1();
-	/*Lab6::controlEx1();
-	Lab6::controlEx2();*/
+	//Lab6::controlEx1();
+	//Lab6::controlEx2();
 	//Lab7::ex1_2();
 	//Lab7::ex3();
 	//Lab7::ex4_5();
 	//Lab7::controlEx1();
-	/*Lab7::controlEx2();
-	Lab7::controlEx3();*/
+	//Lab7::controlEx2();
+	//Lab7::controlEx3();
 	//Lab8::ex1();
-	Lab8::controlEx1();
+	//Lab8::controlEx1();
+	//Lab9::ex1();
+	//Lab9::ex2();
+	//Lab9::ex3();
+	//Lab9::controlEx1();
+	Lab9::controlEx2();
 	return 0;
 }
 

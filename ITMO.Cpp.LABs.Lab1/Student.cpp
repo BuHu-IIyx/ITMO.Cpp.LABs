@@ -36,6 +36,8 @@ string Student::get_last_name()
 void Student::set_scores(int student_scores[])
 {
 	for (int i = 0; i < 5; ++i) {
+		if (student_scores[i] > 5)
+			throw ExScore("в функции set_scores()", student_scores[i]);			
 		Student::scores[i] = student_scores[i];
 	}
 }
@@ -68,3 +70,10 @@ Student::~Student()
 {
 	Student::save();
 }
+
+Student::ExScore::ExScore(string Or, int sc)
+{
+	origin = Or; //строка с именем виновника ошибки
+	iValue = sc; //сохраненное неправильное значение 
+};
+

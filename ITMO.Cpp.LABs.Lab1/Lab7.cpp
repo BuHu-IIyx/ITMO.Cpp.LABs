@@ -129,7 +129,7 @@ namespace Lab7
 			return std::to_string(this->hours) + "ч. " + std::to_string(this->minutes)
 				+ "мин. " + std::to_string(this->seconds) + "сек.";
 		}
-		OldTime& addTime(OldTime& time)
+		OldTime addTime(OldTime& time)
 		{
 			OldTime resTime
 			{
@@ -149,7 +149,7 @@ namespace Lab7
 			}
 			return resTime;
 		}
-		OldTime& subTime(OldTime& time)
+		OldTime subTime(OldTime& time)
 		{
 			OldTime resTime
 			{

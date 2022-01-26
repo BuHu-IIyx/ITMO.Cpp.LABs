@@ -66,3 +66,11 @@ namespace Lab8
 	int ex1();
 	int controlEx1();
 }
+namespace Lab9
+{
+	int ex1();
+	int ex2();
+	int ex3();
+	int controlEx1();
+	int controlEx2();
+}

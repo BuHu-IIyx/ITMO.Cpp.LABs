@@ -15,6 +15,10 @@ Time::Time()
 }
 Time::Time(int hours, int minutes, int seconds)
 {
+	if (hours < 0 || minutes < 0 || seconds < 0)
+	{
+		throw ExInit();
+	}
 	Time::hours = hours;
 	Time::minutes = minutes;
 	Time::seconds = seconds;
@@ -34,7 +38,7 @@ string Time::getTime()
 	return std::to_string(Time::hours) + ":" + std::to_string(Time::minutes)
 		+ ":" + std::to_string(Time::seconds);
 }
-Time& Time::addTime(Time& time)
+Time Time::addTime(Time& time)
 {
 	Time resTime (
 		Time::hours + time.hours,
@@ -53,7 +57,7 @@ Time& Time::addTime(Time& time)
 	}
 	return resTime;
 }
-Time& Time::addTime(Time& time1, Time& time2)
+Time Time::addTime(Time& time1, Time& time2)
 {
 	Time resTime(
 		time1.hours + time2.hours,
@@ -61,7 +65,7 @@ Time& Time::addTime(Time& time1, Time& time2)
 		time1.seconds + time2.seconds);
 	return resTime;
 }
-Time& Time::subTime(Time& time)
+Time Time::subTime(Time& time)
 {
 	Time resTime(
 		Time::hours + time.hours,
