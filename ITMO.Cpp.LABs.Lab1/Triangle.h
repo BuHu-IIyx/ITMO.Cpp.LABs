@@ -2,11 +2,10 @@
 #include <string>
 class Triangle
 {
-private:
+public:
 	double a;
 	double b;
 	double c;
-public:
 	Triangle(double, double, double);
 	double getPerimeter();
 	double getArea();

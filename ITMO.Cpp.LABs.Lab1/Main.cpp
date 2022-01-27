@@ -49,13 +49,15 @@ int main()
 	//Lab7::controlEx2();
 	//Lab7::controlEx3();
 	//Lab8::ex1();
-	//Lab8::controlEx1();
+//	Lab8::controlEx1();
 	//Lab9::ex1();
 	//Lab9::ex2();
 	//Lab9::ex3();
-	//Lab9::controlEx1();
-	//Lab9::controlEx2();
-	Lab10::ex1();
+//	Lab9::controlEx1();
+//	Lab9::controlEx2();
+	//Lab10::ex1();
+	Lab10::controlEx1();
+
 	return 0;
 }
 

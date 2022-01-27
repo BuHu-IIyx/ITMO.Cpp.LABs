@@ -2,6 +2,8 @@
 #include "Student.h"
 #include <iostream>
 #include <string>
+#include "Dot.h"
+#include "DotTriangle.h"
 using std::endl;
 using std::cout;
 using std::cin;
@@ -64,6 +66,33 @@ namespace Lab10
 	//
 	int controlEx1()
 	{
+		/*int x, y;
+		std::cout << "Введите координаты вершины A\n" << "x = ";
+		std::cin >> x;
+		std::cout << "y = ";
+		std::cin >> y;
+		Dot pointA (x, y);
+		std::cout << "Введите координаты вершины B\n" << "x = ";
+		std::cin >> x;
+		std::cout << "y = ";
+		std::cin >> y;
+		Dot pointB (x, y);
+		std::cout << "Введите координаты вершины C\n" << "x = ";
+		std::cin >> x;
+		std::cout << "y = ";
+		std::cin >> y;
+		Dot pointC (x, y);*/
 
+		Dot pointA = { 3, 4 };
+		Dot pointB = { 5, 11 };
+		Dot pointC = { 12, 8 };
+
+		DotTriangle triangle (pointA, pointB, pointC);
+		cout << "Сторона А: " << triangle.getLength('A') << endl;
+		cout << "Сторона B: " << triangle.getLength('B') << endl;
+		cout << "Сторона C: " << triangle.getLength('C') << endl;
+		cout << "Периметр равен: " << triangle.getPerimeter() << endl;
+		cout << "Площадь равна: " << triangle.getArea() << endl;
+		return 0;
 	}
 }

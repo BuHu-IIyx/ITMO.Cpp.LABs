@@ -15,9 +15,10 @@ private:
 public:
 	DotTriangle(Dot&, Dot&, Dot&);
 	/*DotTriangle(Dot*, Dot*, Dot*);*/
-	std::vector<double> lengthSides()
-	{		
-		return { a.distanceTo(b), b.distanceTo(c), c.distanceTo(a)};
-	}
+
+	double getLength(char);	
+	double getPerimeter();
+	double getArea();
+
 };
 
