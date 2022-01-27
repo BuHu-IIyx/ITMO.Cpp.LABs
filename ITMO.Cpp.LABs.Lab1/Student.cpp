@@ -13,6 +13,13 @@ Student::Student(string name, string last_name)
 	Student::set_name(name);
 	Student::set_last_name(last_name);
 }
+Student::Student(string name, string last_name, IdCard* id)
+{
+	Student::set_name(name);
+	Student::set_last_name(last_name);
+	Student::setIdCard(id);
+}
+
 void Student::set_name(string student_name)
 {
 	Student::name = student_name;
@@ -76,4 +83,13 @@ Student::ExScore::ExScore(string Or, int sc)
 	origin = Or; //строка с именем виновника ошибки
 	iValue = sc; //сохраненное неправильное значение 
 };
+
+void Student::setIdCard(IdCard* c)
+{
+	iCard = c;
+}
+IdCard Student::getIdCard()
+{
+	return *iCard;
+}
 

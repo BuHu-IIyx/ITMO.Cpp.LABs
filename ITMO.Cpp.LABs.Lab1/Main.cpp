@@ -54,7 +54,8 @@ int main()
 	//Lab9::ex2();
 	//Lab9::ex3();
 	//Lab9::controlEx1();
-	Lab9::controlEx2();
+	//Lab9::controlEx2();
+	Lab10::ex1();
 	return 0;
 }
 

@@ -139,7 +139,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Dot.cpp" />
+    <ClCompile Include="DotTriangle.cpp" />
+    <ClCompile Include="IdCard.cpp" />
     <ClCompile Include="Lab1.cpp" />
+    <ClCompile Include="Lab10.cpp" />
     <ClCompile Include="Lab2.cpp" />
     <ClCompile Include="Lab3.cpp" />
     <ClCompile Include="Lab4.cpp" />
@@ -154,7 +158,10 @@
     <ClCompile Include="Triangle.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Dot.h" />
+    <ClInclude Include="DotTriangle.h" />
     <ClInclude Include="Header.h" />
+    <ClInclude Include="IdCard.h" />
     <ClInclude Include="Student.h" />
     <ClInclude Include="Time.h" />
     <ClInclude Include="Triangle.h" />

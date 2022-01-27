@@ -74,3 +74,8 @@ namespace Lab9
 	int controlEx1();
 	int controlEx2();
 }
+namespace Lab10
+{
+	int ex1();
+	//int controlEx1();
+}
