@@ -90,3 +90,8 @@ namespace Lab12
 {
 	int ex1();
 }
+namespace Lab13
+{
+	int ex1();
+	int controlEx1();
+}
