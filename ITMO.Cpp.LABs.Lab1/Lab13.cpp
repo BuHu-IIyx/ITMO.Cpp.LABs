@@ -12,6 +12,9 @@ using std::string;
 
 namespace Lab13
 {
+	//
+	// ”пражнение 1
+	//	
 	class Item
 	{
 	private:
