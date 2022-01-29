@@ -141,10 +141,12 @@
   <ItemGroup>
     <ClCompile Include="Dot.cpp" />
     <ClCompile Include="DotTriangle.cpp" />
+    <ClCompile Include="Human.cpp" />
     <ClCompile Include="IdCard.cpp" />
     <ClCompile Include="Lab1.cpp" />
     <ClCompile Include="Lab10.cpp" />
     <ClCompile Include="Lab11.cpp" />
+    <ClCompile Include="Lab12.cpp" />
     <ClCompile Include="Lab2.cpp" />
     <ClCompile Include="Lab3.cpp" />
     <ClCompile Include="Lab4.cpp" />
@@ -155,6 +157,8 @@
     <ClCompile Include="Lab9.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Student.cpp" />
+    <ClCompile Include="StudentN.cpp" />
+    <ClCompile Include="Teacher.cpp" />
     <ClCompile Include="Time.cpp" />
     <ClCompile Include="Triangle.cpp" />
   </ItemGroup>
@@ -162,8 +166,11 @@
     <ClInclude Include="Dot.h" />
     <ClInclude Include="DotTriangle.h" />
     <ClInclude Include="Header.h" />
+    <ClInclude Include="Human.h" />
     <ClInclude Include="IdCard.h" />
     <ClInclude Include="Student.h" />
+    <ClInclude Include="StudentN.h" />
+    <ClInclude Include="Teacher.h" />
     <ClInclude Include="Time.h" />
     <ClInclude Include="Triangle.h" />
   </ItemGroup>
