@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{6d08e478-2496-4e3a-8851-86a833959ef4}</ProjectGuid>
-    <RootNamespace>ITMOCppLABsLab1</RootNamespace>
+    <ProjectGuid>{5835463a-1ccb-42ed-9016-1755f25acbf8}</ProjectGuid>
+    <RootNamespace>ITMOCppLab15</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,45 +139,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Dot.cpp" />
-    <ClCompile Include="DotTriangle.cpp" />
-    <ClCompile Include="IdCard.cpp" />
-    <ClCompile Include="Lab1.cpp" />
-    <ClCompile Include="Lab10.cpp" />
-    <ClCompile Include="Lab11.cpp" />
-    <ClCompile Include="Lab12.cpp" />
-    <ClCompile Include="Lab13.cpp" />
-    <ClCompile Include="Lab14.cpp" />
-    <ClCompile Include="Lab15.cpp" />
-    <ClCompile Include="Lab2.cpp" />
-    <ClCompile Include="Lab3.cpp" />
-    <ClCompile Include="Lab4.cpp" />
-    <ClCompile Include="Lab5.cpp" />
-    <ClCompile Include="Lab6.cpp" />
-    <ClCompile Include="Lab7.cpp" />
-    <ClCompile Include="Lab8.cpp" />
-    <ClCompile Include="Lab9.cpp" />
-    <ClCompile Include="Main.cpp" />
-    <ClCompile Include="Student.cpp" />
-    <ClCompile Include="Teacher.cpp" />
-    <ClCompile Include="Time.cpp" />
-    <ClCompile Include="Triangle.cpp" />
+    <ClCompile Include="..\..\..\..\..\ITMO\12. C++\Demo_source_C++\Lab_STL\Group.cpp" />
+    <ClCompile Include="..\..\..\..\..\ITMO\12. C++\Demo_source_C++\Lab_STL\IdCard.cpp" />
+    <ClCompile Include="..\..\..\..\..\ITMO\12. C++\Demo_source_C++\Lab_STL\main.cpp" />
+    <ClCompile Include="..\..\..\..\..\ITMO\12. C++\Demo_source_C++\Lab_STL\student.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Dot.h" />
-    <ClInclude Include="DotTriangle.h" />
-    <ClInclude Include="Header.h" />
-    <ClInclude Include="Human.h" />
-    <ClInclude Include="IdCard.h" />
-    <ClInclude Include="Student.h" />
-    <ClInclude Include="StudentN.h" />
-    <ClInclude Include="Teacher.h" />
-    <ClInclude Include="Time.h" />
-    <ClInclude Include="Triangle.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="Lab5Ex1.txt" />
-    <Text Include="students.txt" />
+    <ClInclude Include="..\..\..\..\..\ITMO\12. C++\Demo_source_C++\Lab_STL\Group.h" />
+    <ClInclude Include="..\..\..\..\..\ITMO\12. C++\Demo_source_C++\Lab_STL\IdCard.h" />
+    <ClInclude Include="..\..\..\..\..\ITMO\12. C++\Demo_source_C++\Lab_STL\student.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

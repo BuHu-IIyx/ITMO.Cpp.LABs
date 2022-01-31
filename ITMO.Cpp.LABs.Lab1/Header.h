@@ -102,3 +102,7 @@ namespace Lab14
 	int ex3();
 	int controlEx1();
 }
+namespace Lab15
+{
+	int controlEx1();
+}
